@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <header>
+    <a href="/" class="logo">Vision "X"</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#faq">Faq</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="icons">
+      <a href="#"><i class="bx bx-search-alt"></i></a>
+      <a href="#"><i class="bx bx-user-circle"></i></a>
+      <div class="parentPopUp">
+        <i class="bx bx-shopping-bag"></i>
+        <div class="popUp">
+          <div class="popUpProduse"></div>
+          <div class="popUpButon">
+            <div class="totalAfisare">0$</div>
+            <button class="checkout" onclick="comandaMinima()">
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="cart-page">
+    
+    <section class="shop" id="shop">
+      <div class="container">        
+        <div class="box product">
+          <img
+            src="https://images.lvrcdn.com/Big76I/JRD/062_38d706fd-a300-4eee-91cf-e83840555c23.JPG"
+          />
+          <h4>Ghetto print X</h4>
+    
+          <div class="product-buttons">
+            <button class="buy-product" data-id="1" data-price="10" data-operation="-">-</button>
+            <div class="product-quantity1">1</div>
+            <button class="buy-product" data-id="1" data-price="10" data-operation="+">+</button>
+            <button class="buy-product" data-id="1" data-price="10" data-operation="x">x</button>
+            <div class="product-price1">10</div>
+          </div>
+          
+            <i class="bx bx-cart"></i>
+          </a>
+        </div>
+
+        <div class="box product">
+          <img
+            src="https://images.lvrcdn.com/Big76I/XCL/001_b8b0e1dd-6807-407a-800f-d2bcc6a6ecb8.JPG"
+          />
+          <h4>Klimt X</h4>
+
+          <div class="product-buttons">
+            <button class="buy-product" data-id="2" data-price="10" data-operation="-">-</button>
+            <div class="product-quantity2">1</div>
+            <button class="buy-product" data-id="2" data-price="10" data-operation="+">+</button>
+            <button class="buy-product" data-id="2" data-price="10" data-operation="x">x</button>
+            <div class="product-price2">10</div>
+          </div>                          
+        </div>
+
+        <div class="box product">
+          <img
+            src="https://images.lvrcdn.com/Big76I/LFA/005_4277d047-5dba-4fe8-a18d-7002b95f4f98.JPG"
+          />
+          <h4>Black chain X</h4>          
+          <div class="product-buttons">
+            <button class="buy-product" data-id="3" data-price="10" data-operation="-">-</button>
+            <div class="product-quantity3">1</div>
+            <button class="buy-product" data-id="3" data-price="10" data-operation="+">+</button>
+            <button class="buy-product" data-id="3" data-price="10" data-operation="x">x</button>
+            <div class="product-price3">10</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="checkout-total">Total: <span>30 lei</span></div>
+      <button class="show-cart">Show cart</button>
+    </section>
+  </main> 
+  <div class="last">
+    <p>© 2022 by Vasiliu Razvan Andrei. Project for e-commerce class.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
